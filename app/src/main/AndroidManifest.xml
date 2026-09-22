@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:label="Circle"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Circle">
+
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".DiscoverActivity" />
+        <activity android:name=".CreatePostActivity" />
+        <activity android:name=".FriendsActivity" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".EditProfileActivity" />
+        <activity android:name=".SettingsActivity" />
+        <activity android:name=".NotificationsActivity" />
+        <activity android:name=".PrivacyActivity" />
+        <activity android:name=".ChangePasswordActivity" />
+        <activity android:name=".AboutActivity" />
+        <activity android:name=".ChatActivity" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/post_card_background"
+    android:elevation="4dp"
+    android:padding="16dp"
+    android:layout_marginStart="4dp"
+    android:layout_marginEnd="4dp"
+    android:layout_marginBottom="16dp">
+
+    <TextView
+        android:id="@+id/tvPostName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lindokuhle Maseko"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="#1F2937" />
+
+    <TextView
+        android:id="@+id/tvPostUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@lindokuhle"
+        android:textSize="14sp"
+        android:textColor="#6B7280"
+        android:layout_marginTop="2dp" />
+
+    <TextView
+        android:id="@+id/tvPostContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This is a Circle post."
+        android:textSize="16sp"
+        android:textColor="#1F2937"
+        android:layout_marginTop="12dp" />
+
+    <ImageView
+        android:id="@+id/ivPostImage"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        android:contentDescription="Post photo" />
+
+    <Button
+        android:id="@+id/btnLike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="♡ Like"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="💬 Comment (0)"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnDeletePost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Delete Post"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnEditPost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Edit Post"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/commentsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical" />
+
+</LinearLayout>
