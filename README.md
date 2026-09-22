@@ -255,7 +255,7 @@ The use of GitHub Actions demonstrates the application of continuous integration
 The complete Circle Android source code is available on GitHub.
 
 **GitHub Repository:**
-`INSERT YOUR GITHUB REPOSITORY LINK HERE`
+`https://github.com/st10444841-prog/Circle-Android-App`
 
 ---
 
