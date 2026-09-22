@@ -288,7 +288,19 @@ The project documentation includes screenshots demonstrating:
 * Dark Mode.
 
 A functionality demonstration video is also included as part of the final submission.
+## 13. Screenshots and Demonstration
 
+The Circle application was tested across its main features, including user registration and login, post creation, photo posts, likes, comments, editing and deleting posts, discovering and following users, friends and chat functionality, profile management, notifications, settings, and dark mode.
+
+### Application Screenshots
+
+The project screenshots are included in the `Screenshots` folder.
+
+### Application Demonstration Video
+
+The complete demonstration of the Circle Android application is available on YouTube:
+
+[Watch the Circle Application Demonstration](https://www.youtube.com/watch?v=sMlbe_hPK3g)
 ---
 
 ## 14. AI Tool Usage
