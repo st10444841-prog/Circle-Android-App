@@ -300,7 +300,7 @@ The project screenshots are included in the `Screenshots` folder.
 
 The complete demonstration of the Circle Android application is available on YouTube:
 
-[Watch the Circle Application Demonstration](https://www.youtube.com/watch?v=sMlbe_hPK3g)
+[Watch the Circle Application Demonstration](https://youtu.be/PZPw4GmiTBg)
 ---
 
 ## 14. AI Tool Usage
