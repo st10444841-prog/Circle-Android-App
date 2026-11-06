@@ -330,3 +330,69 @@ OpenAI (2026) *ChatGPT*. Available at: https://chatgpt.com/ (Accessed: 22 Septem
 Circle demonstrates the development of a functional Android social networking application using Kotlin and Android Studio. The application combines authentication, post management, social interaction, search, following, chat, notifications, profile management and application settings.
 
 The use of GitHub provides source-code management and version control, while GitHub Actions provides automated build verification. Together, these technologies support a structured software development workflow and provide a complete record of the application's source code and development process.
+
+
+
+---
+
+## 10. Main Application Features
+
+- User registration and login using Firebase Authentication.
+- User profile management.
+- Create, view, edit and delete posts.
+- Like and comment on posts.
+- Search for friends and manage friend requests.
+- Notifications and application settings.
+- Daily Inspiration using a REST API.
+- Custom application launcher icon.
+- English and isiZulu translation resources.
+
+## 11. Technologies Used
+
+- Kotlin
+- Android Studio
+- XML layouts
+- Firebase Authentication
+- Cloud Firestore
+- REST API
+- Supabase storage infrastructure
+- GitHub and GitHub Actions
+
+## 12. Application Requirements
+
+- Application name: Circle
+- Package name: `com.lindokuhle.circle`
+- Minimum Android SDK: 24
+- Target Android SDK: 36
+- Application version: 1.0
+
+## 13. Installation
+
+To test Circle on an Android device:
+
+1. Download the `app-debug.apk` file.
+2. Open the downloaded file on an Android phone.
+3. Allow installation from the download source if prompted.
+4. Tap Install.
+5. Open Circle.
+
+## 14. Running the Project
+
+1. Clone or download this repository.
+2. Open the project in Android Studio.
+3. Allow Gradle to synchronise.
+4. Add the required Firebase `google-services.json` configuration file.
+5. Connect an Android emulator or device.
+6. Build and run the application.
+
+## 15. Project Repository
+
+GitHub: https://github.com/st10444841-prog/Circle-Android-App
+
+## 16. Developer
+
+Developed as part of the Open Source Coding 6312 Android application project.
+
+## 17. Project Status
+
+Circle includes its core authentication, social networking, database and REST API functionality. Further work is required to complete in-app language switching, cloud image-upload integration and production release preparation.
