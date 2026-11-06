@@ -1,112 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="#F7F9FC"
-    android:padding="20dp">
-
-    <TextView
-        android:id="@+id/tvFriendsTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Friends"
-        android:textSize="28sp"
-        android:textStyle="bold"
-        android:textColor="#1F2937"
-        android:layout_marginBottom="20dp" />
-
-    <EditText
-        android:id="@+id/etFriendSearch"
-        android:layout_width="match_parent"
-        android:layout_height="52dp"
-        android:hint="Search friends"
-        android:padding="14dp"
-        android:background="#FFFFFF"
-        android:inputType="text"
-        android:layout_marginBottom="20dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Your Friends"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:textColor="#1F2937"
-        android:layout_marginBottom="12dp" />
+    android:fillViewport="true">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="14dp"
-        android:background="#FFFFFF"
-        android:layout_marginBottom="10dp">
+        android:orientation="vertical"
+        android:padding="20dp">
 
         <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Thabo M."
-            android:textSize="17sp"
-            android:textStyle="bold"
-            android:textColor="#1F2937" />
-
-        <Button
-            android:id="@+id/btnMessageThabo"
+            android:id="@+id/tvFriendsTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Message" />
+            android:text="Friends"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#1F2937"
+            android:layout_marginBottom="20dp" />
+
+        <EditText
+            android:id="@+id/etFriendSearch"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:hint="Search by username"
+            android:padding="14dp"
+            android:background="#FFFFFF"
+            android:inputType="text"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search Results"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#1F2937"
+            android:layout_marginBottom="12dp" />
+
+        <LinearLayout
+            android:id="@+id/searchResultsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Friend Requests"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#1F2937"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="12dp" />
+
+        <LinearLayout
+            android:id="@+id/incomingRequestsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Friends"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#1F2937"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="12dp" />
+
+        <LinearLayout
+            android:id="@+id/friendsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <!-- Temporary compatibility views for the existing FriendsActivity.
+             These will be removed when we replace the Kotlin code. -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/btnMessageThabo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Message" />
+
+            <Button
+                android:id="@+id/btnMessageLebo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Message" />
+
+            <Button
+                android:id="@+id/btnMessageSipho"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Message" />
+
+        </LinearLayout>
 
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="14dp"
-        android:background="#FFFFFF"
-        android:layout_marginBottom="10dp">
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Lebo K."
-            android:textSize="17sp"
-            android:textStyle="bold"
-            android:textColor="#1F2937" />
-
-        <Button
-            android:id="@+id/btnMessageLebo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Message" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="14dp"
-        android:background="#FFFFFF">
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Sipho N."
-            android:textSize="17sp"
-            android:textStyle="bold"
-            android:textColor="#1F2937" />
-
-        <Button
-            android:id="@+id/btnMessageSipho"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Message" />
-
-    </LinearLayout>
-
-</LinearLayout>
+</ScrollView>

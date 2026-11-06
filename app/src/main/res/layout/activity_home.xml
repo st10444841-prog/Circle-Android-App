@@ -33,6 +33,52 @@
         android:textSize="16sp"
         android:textColor="#6B7280" />
 
+    <!-- Daily Inspiration REST API section -->
+    <LinearLayout
+        android:id="@+id/inspirationCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="#EAF4FF">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Daily Inspiration"
+            android:textColor="#1565C0"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvInspirationQuote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Loading inspiration..."
+            android:textColor="#263238"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvInspirationAuthor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text=""
+            android:textColor="#546E7A"
+            android:textSize="14sp"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/btnRefreshInspiration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="New Inspiration" />
+
+    </LinearLayout>
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"

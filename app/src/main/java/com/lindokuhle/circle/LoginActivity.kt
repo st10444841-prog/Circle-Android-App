@@ -1,3 +1,4 @@
+
 package com.lindokuhle.circle
 
 import android.content.Intent
@@ -7,7 +8,7 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.lindokuhle.circle.utils.UserStorage
+import com.google.firebase.auth.FirebaseAuth
 
 class LoginActivity : AppCompatActivity() {
 
@@ -16,7 +17,7 @@ class LoginActivity : AppCompatActivity() {
     private lateinit var btnLogin: Button
     private lateinit var tvCreateAccount: TextView
 
-    private lateinit var userStorage: UserStorage
+    private lateinit var auth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,7 +28,7 @@ class LoginActivity : AppCompatActivity() {
         btnLogin = findViewById(R.id.btnLogin)
         tvCreateAccount = findViewById(R.id.tvCreateAccount)
 
-        userStorage = UserStorage(this)
+        auth = FirebaseAuth.getInstance()
 
         btnLogin.setOnClickListener {
             loginUser()
@@ -42,7 +43,7 @@ class LoginActivity : AppCompatActivity() {
     private fun loginUser() {
 
         val email = etEmail.text.toString().trim()
-        val password = etPassword.text.toString().trim()
+        val password = etPassword.text.toString()
 
         if (email.isEmpty()) {
             etEmail.error = "Please enter your email"
@@ -56,29 +57,34 @@ class LoginActivity : AppCompatActivity() {
             return
         }
 
-        val savedEmail = userStorage.getEmail()
-        val savedPassword = userStorage.getPassword()
+        btnLogin.isEnabled = false
 
-        if (email != savedEmail || password != savedPassword) {
+        auth.signInWithEmailAndPassword(email, password)
+            .addOnCompleteListener(this) { task ->
 
-            Toast.makeText(
-                this,
-                "Invalid email or password",
-                Toast.LENGTH_SHORT
-            ).show()
+                btnLogin.isEnabled = true
 
-            return
-        }
+                if (task.isSuccessful) {
 
-        Toast.makeText(
-            this,
-            "Login successful!",
-            Toast.LENGTH_SHORT
-        ).show()
+                    Toast.makeText(
+                        this,
+                        "Login successful!",
+                        Toast.LENGTH_SHORT
+                    ).show()
 
-        // Open the Circle Home screen
-        val intent = Intent(this, HomeActivity::class.java)
-        startActivity(intent)
-        finish()
+                    val intent = Intent(this, HomeActivity::class.java)
+                    startActivity(intent)
+                    finish()
+
+                } else {
+
+                    Toast.makeText(
+                        this,
+                        task.exception?.localizedMessage
+                            ?: "Invalid email or password",
+                        Toast.LENGTH_LONG
+                    ).show()
+                }
+            }
     }
 }

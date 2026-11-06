@@ -1,3 +1,70 @@
 <resources>
     <string name="app_name">Circle</string>
+
+    <!-- General -->
+    <string name="welcome">Welcome to Circle</string>
+    <string name="connect_share_belong">Connect • Share • Belong</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="back">Back</string>
+    <string name="loading">Loading...</string>
+    <string name="search">Search</string>
+    <string name="done">Done</string>
+
+    <!-- Login and registration -->
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="email">Email address</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="username">Username</string>
+    <string name="full_name">Full name</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="create_account">Create an account</string>
+    <string name="already_have_account">Already have an account?</string>
+    <string name="dont_have_account">Don\'t have an account?</string>
+    <string name="logout">Log out</string>
+
+    <!-- Main navigation -->
+    <string name="home">Home</string>
+    <string name="discover">Discover</string>
+    <string name="create_post">Create Post</string>
+    <string name="friends">Friends</string>
+    <string name="profile">Profile</string>
+    <string name="settings">Settings</string>
+
+    <!-- Posts -->
+    <string name="whats_on_your_mind">What\'s on your mind?</string>
+    <string name="write_caption">Write something...</string>
+    <string name="add_photo">Add Photo</string>
+    <string name="post">Post</string>
+    <string name="like">Like</string>
+    <string name="comment">Comment</string>
+    <string name="share">Share</string>
+    <string name="write_comment">Write a comment...</string>
+
+    <!-- Friends -->
+    <string name="find_friends">Find Friends</string>
+    <string name="friend_requests">Friend Requests</string>
+    <string name="send_request">Send Request</string>
+    <string name="accept">Accept</string>
+    <string name="reject">Reject</string>
+    <string name="message">Message</string>
+
+    <!-- Profile and settings -->
+    <string name="edit_profile">Edit Profile</string>
+    <string name="change_password">Change Password</string>
+    <string name="privacy">Privacy</string>
+    <string name="notifications">Notifications</string>
+    <string name="about_circle">About Circle</string>
+    <string name="language">Language</string>
+    <string name="choose_language">Choose your language</string>
+    <string name="english">English</string>
+    <string name="isizulu">isiZulu</string>
+
+    <!-- Inspiration -->
+    <string name="daily_inspiration">Daily Inspiration</string>
+    <string name="get_inspired">Get Inspired</string>
 </resources>
