@@ -396,3 +396,11 @@ Developed as part of the Open Source Coding 6312 Android application project.
 ## 17. Project Status
 
 Circle includes its core authentication, social networking, database and REST API functionality. Further work is required to complete in-app language switching, cloud image-upload integration and production release preparation.
+
+## YouTube Demonstration Video
+
+The demonstration video below provides a walkthrough of the Circle Android application, showcasing its main features, navigation, and functionality.
+
+**Watch the Circle App Demonstration:**
+
+[Click here to watch the Circle App Demonstration on YouTube](https://youtu.be/KCc3wGJ7aNY?si=ZWlrUfEZNtUWOTkT)
